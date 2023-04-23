@@ -248,3 +248,16 @@ header .apresentacao .eu .links .border-github {
 }
 
 /* FIM - APRESENTÇãO */
+
+
+footer {
+	height: 6.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 0 0 12.5%;
+	color: #c4c4c4;
+	font-size: 1rem;
+	
+	background-color: #121212;
+}
