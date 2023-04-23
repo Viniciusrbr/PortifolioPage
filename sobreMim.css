@@ -86,7 +86,12 @@ main .sobreMim .buttons .curriculo {
 		display: none;
 	}
 
+	main .sobreMim{
+		padding: 6.25rem 2.8125rem 6.25rem 2.8125rem;
+	}
+
 	main .sobreMim .desc{
-		width: 100%;
+		width: 100%;	
+		text-align: justify;
 	}
 }
