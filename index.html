@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="habilidades.css">
     <link rel="stylesheet" href="projetos.css">
 
+    <!-- Lib de animação ( AOS )-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -36,7 +38,7 @@
 
 
         <div class="apresentacao">
-            <div class="eu">
+            <div class="eu" data-aos="fade-right" data-aos-duration="2000">
                 <div class="texto">
                     <h3>OLÁ, EU SOU</h3>
                     <h1>VINICIUS RIBEIRO</h1>
@@ -54,7 +56,7 @@
                 </div>
             </div>
 
-            <figure class="loop">
+            <figure class="loop" data-aos="fade-left" data-aos-duration="2000">
                 <img src="icons/illustration.svg" alt="loop" />
             </figure>
 
@@ -63,11 +65,11 @@
 
     <main id="sobreMim">
         <div class="sobreMim">
-            <figure class="perfil">
+            <figure class="perfil" data-aos="fade-up" data-aos-duration="2000">
                 <img src="https://avatars.githubusercontent.com/u/103283363?v=4" alt="Foto de Perfil" />
             </figure>
 
-            <div class="desc">
+            <div class="desc" data-aos="fade-up" data-aos-duration="2000">
                 <h2>SOBRE MIM</h2>
                 <h3>Benevides-PA, Brasil</h3>
                 <p>
@@ -96,10 +98,10 @@
         </div>
 
         <div class="habilidades" id="habilidades">
-            <h1>HABILIDADES</h1>
+            <h1 data-aos="fade-up" data-aos-duration="2000">HABILIDADES</h1>
 
-            <div class="linguagens">
-                
+            <div class="linguagens" data-aos="fade-up" data-aos-duration="2000">
+
                 <div class="linguagem-box">
                     <img src="linguagens/html5-plain.svg" alt="">
                     <p>HTML</p>
@@ -160,13 +162,13 @@
 
         </div>
 
-        <div class="projetos " id="projetos">
-            <h2>PROJETOS</h2>
+        <div class="projetos" id="projetos">
+            <h2 data-aos="fade-up" data-aos-duration="2000">PROJETOS</h2>
             <div class="listagem">
 
                 <div class="p1">
 
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <figure>
                             <img src="images/530x200.jpg" alt="" />
                         </figure>
@@ -182,7 +184,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <figure>
                             <img src="images/530x200.jpg" alt="" />
                         </figure>
@@ -198,7 +200,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <figure>
                             <img src="images/530x200.jpg" alt="" />
                         </figure>
@@ -214,7 +216,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="2000"> 
                         <figure>
                             <img src="images/530x200.jpg" alt="" />
                         </figure>
@@ -241,7 +243,11 @@
         <p>&copy; 2023 - Vinicius Ribeiro</p>
     </footer>
 
-
+    <!-- JS da Lib de animação-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/menu.js"></script>
 </body>
