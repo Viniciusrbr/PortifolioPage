@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Portifolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sobreMim.css">
-    <link rel="stylesheet" href="habilidades.css">
-    <link rel="stylesheet" href="projetos.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobreMim.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+    <link rel="shortcut icon" href="icons/iuricode-logo.svg" type="image/x-icon">
 
     <!-- Lib de animação ( AOS )-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -33,6 +38,7 @@
                 <li><a href="#sobreMim">Sobre mim</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -76,7 +82,7 @@
                     Atualmente sou estudante de Engenharia de Software na Universidade do Estado do Pará.
                 </p>
                 <figure class="redes-sociais">
-                    <img src="icons/twitter.svg" alt="twitter" />
+                    <img src="icons/codepen.svg" alt="twitter" />
                     <img src="icons/twitch.svg" alt="twitch" />
                     <img src="icons/youtube.svg" alt="youtube" />
                     <img src="icons/figma.svg" alt="figma" />
@@ -166,7 +172,7 @@
             <h2 data-aos="fade-up" data-aos-duration="2000">PROJETOS</h2>
             <div class="listagem">
 
-                <div class="p1">
+                <div class="p1" data-aos="fade-up" data-aos-duration="2000">
 
                     <div data-aos="fade-up" data-aos-duration="2000">
                         <figure>
@@ -216,7 +222,39 @@
                         </a>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-duration="2000"> 
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <figure>
+                            <img src="images/530x200.jpg" alt="" />
+                        </figure>
+                        <h3>Nome do projeto</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="tecnologias">Tecnologias usadas no projeto</p>
+                        <a href="#" target="_blank">
+                            <img src="icons/link.svg" alt="link" class="linkimg" />
+                            Visualizar
+                        </a>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <figure>
+                            <img src="images/530x200.jpg" alt="" />
+                        </figure>
+                        <h3>Nome do projeto</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
+                            varius.
+                        </p>
+                        <p class="tecnologias">Tecnologias usadas no projeto</p>
+                        <a href="#" target="_blank">
+                            <img src="icons/link.svg" alt="link" class="linkimg" />
+                            Visualizar
+                        </a>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <figure>
                             <img src="images/530x200.jpg" alt="" />
                         </figure>
@@ -237,6 +275,22 @@
         </div>
     </main>
 
+
+    <section id="contato">
+        <h2 data-aos="fade-up" data-aos-duration="2000">Contato</h2>
+        <form data-aos="fade-up" data-aos-duration="2000">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com" />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
 
 
     <footer>

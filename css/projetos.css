@@ -22,7 +22,7 @@ main .projetos .listagem .p1 div {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 48%;
+	width: 30%;
 	margin-bottom: 80px;
 }
 
