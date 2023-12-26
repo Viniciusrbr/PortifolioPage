@@ -1,97 +1,98 @@
-main {
+.sobreMim {
+	background-color: var(--dark-200);
+	padding: 6.38rem 11.25rem;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 100%;
+	gap: 11.44rem;
 }
-main .sobreMim {
-	display: flex;
-	padding: 6.25rem 0 6.25rem 12.5%;
-	gap: 15%;
-	flex-wrap: wrap;
-	transition: all 0.5s;
-	width: 100%;
-	
-	background-color: #151515;
-}
-main .sobreMim .perfil img {
-	width: 22.938rem;
-	height: 22.938rem;
-	border-left: 4px solid #00d2df;
+
+.fotoDePerfil img {
+	border-left: 4px solid var(--blue);
 	border-radius: 4px;
-	transition: all 0.5s;
+	width: 22.9375rem;
+	height: 22.9375rem;
 }
-main .sobreMim .desc {
-	width: 40%;
-}
-main .sobreMim .desc h2 {
-	color: #fff;
+
+.sobreMim-textos h1 {
 	font-size: 1.5rem;
 	font-weight: 600;
-	line-height: 1.813rem;
 	margin-bottom: 2.5rem;
 }
-main .sobreMim .desc h3 {
-	color: #fff;
+
+.sobreMim-textos h2 {
 	font-size: 1.25rem;
 	font-weight: 500;
-	line-height: 1.5rem;
-	margin-bottom: 1.313rem;
+	margin-bottom: 1.31rem;
 }
-main .sobreMim .desc p {
-	color: #c4c4c4;
+
+.sobreMim-textos p {
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 2rem;
-	margin-bottom: 2.625rem;
+	margin-bottom: 2.5rem;
+	color: var(--gray);
 }
 
-main .sobreMim .redes-sociais {
+.skills {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 1.875rem;
-	margin-bottom: 2.75rem;
+	gap: 1.88rem;
 }
-main .sobreMim .buttons {
+
+.skills img {
+	max-width: 24px;
+	max-height: 24px;
+}
+
+.sobreMim-buttons {
 	display: flex;
-	flex-direction: row;
+	margin-top: 2.63rem;
 	gap: 3rem;
 }
-main .sobreMim .buttons a {
-	color: #fff;
+
+.sobreMim-buttons a {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.9rem;
+	padding: 0.5rem 1rem;
+
+	color: white;
 	font-weight: 600;
 	font-size: 1rem;
-	line-height: 1.21rem;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 1rem;
-	align-items: center;
-	justify-content: center;
-	width: 9.563rem;
 	border: 2px solid transparent;
-	padding: 0.5rem 1rem;
 }
-main .sobreMim .buttons .email {
-	border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
-}
-main .sobreMim .buttons .curriculo {
+
+.sobreMim-buttons .curriculo {
 	border-image: linear-gradient(90deg, #d24074, #6518b4 100%) 1;
 }
 
+.sobreMim-buttons .email {
+	border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
+}
 
-@media (max-width: 600px){
-	main .sobreMim .perfil img{
+@media(max-width: 1226px) {
+	.sobreMim {
+		padding: 6.38rem 5.625rem;
+		gap: 5.625rem;
+	}
+}
+
+@media(max-width: 953px) {
+	.sobreMim {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.fotoDePerfil {
 		display: none;
 	}
 
-	main .sobreMim{
-		padding: 6.25rem 2.8125rem 6.25rem 2.8125rem;
+	.sobreMim-buttons {
+		gap: 1.5rem;
 	}
+}
 
-	main .sobreMim .desc{
-		width: 100%;	
-		text-align: justify;
+@media(max-width: 600px) {
+	.sobreMim {
+		padding: 1.5rem;
 	}
 }
