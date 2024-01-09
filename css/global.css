@@ -12,7 +12,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,4 +35,15 @@ footer {
     padding: 0 0 0 12.5%;
     color: var(--gray);
     font-size: 1rem;
+}
+
+.hover-effect01:hover {
+    transition: background-color 1s ease;
+    background-image: linear-gradient(45deg, #9358f7, #10d7e2 100%);
+}
+
+
+.hover-effect02:hover {
+    transition: background-color 1s ease;
+    background-image: linear-gradient(90deg, #d24074, #6518b4 100%);
 }

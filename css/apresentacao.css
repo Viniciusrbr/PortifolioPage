@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-top: 8.3rem;
 }
 
 .apresentacao .container-esquerdo {

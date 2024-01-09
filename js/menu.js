@@ -1,4 +1,6 @@
 const btnMobile = document.getElementById('btn-mobile');
+const links = document.querySelectorAll('#menu a');
+
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
@@ -15,3 +17,6 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+links.forEach((link) => {
+  link.addEventListener('click', toggleMenu);
+ });
