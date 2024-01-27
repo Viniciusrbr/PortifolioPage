@@ -37,6 +37,18 @@ footer {
     font-size: 1rem;
 }
 
+.border-blue {
+    border-radius: 0.25rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
+}
+
+.border-purple {
+    border-radius: 0.25rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #d24074, #6518b4 100%) 1;
+}
+
 .hover-effect01:hover {
     transition: background-color 1s ease;
     background-image: linear-gradient(45deg, #9358f7, #10d7e2 100%);

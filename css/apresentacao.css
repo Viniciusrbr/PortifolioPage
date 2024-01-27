@@ -46,18 +46,8 @@
     gap: 1rem;
 
     padding: 1rem;
-
-    border-radius: 0.25rem;
-    border: 2px solid transparent;
 }
 
-.apresentacao .container-esquerdo .links .border-linkedin {
-    border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
-}
-
-.apresentacao .container-esquerdo .links .border-github {
-    border-image: linear-gradient(90deg, #d24074, #6518b4 100%) 1;
-}
 
 .container-direito {
     background-repeat: no-repeat;

@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="icons/logo-site.svg" type="image/x-icon">
 
+    <!--FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/apresentacao.css">
@@ -20,10 +19,10 @@
     <link rel="stylesheet" href="css/experiencia.css">
     <link rel="stylesheet" href="css/projetos.css">
 
-    <title>Vinicius Portifolio</title>
+    <title>Viniciusrbr Portifolio</title>
 
     <!-- Lib de animação ( AOS )-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +33,7 @@
             </div>
 
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">Menu
+                aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
 
@@ -48,7 +47,7 @@
     </header>
 
     <div class="apresentacao" id="home">
-        <div class="container-esquerdo">
+        <div class="container-esquerdo" data-aos="fade-right" data-aos-duration="3000">
             <div class="textos">
                 <h3>Olá, Eu sou</h3>
                 <h1>Vinicius Ribeiro</h1>
@@ -56,24 +55,23 @@
             </div>
 
             <div class="links">
-                <a href="https://www.linkedin.com/in/viniciusrbr/" class="border-linkedin hover-effect01"
-                    target="_blank">
+                <a href="https://www.linkedin.com/in/viniciusrbr/" class="border-blue hover-effect01" target="_blank">
                     <img src="icons/linkedin.svg" alt="logo linkedin" class="linkedin" />
                     Linkedin
                 </a>
-                <a href="https://github.com/viniciusrbr" class="border-github hover-effect02" target="_blank">
+                <a href="https://github.com/viniciusrbr" class="border-purple hover-effect02" target="_blank">
                     <img src="icons/github.svg" alt="logo github" class="github" />
                     GitHub
                 </a>
             </div>
         </div>
 
-        <figure class="container-direito">
+        <figure class="container-direito" data-aos="fade-left" data-aos-duration="3000">
             <img src="icons/illustration.svg" />
         </figure>
     </div>
 
-    <div class="sobreMim" id="sobreMim">
+    <div class="sobreMim" id="sobreMim" data-aos="fade-up" data-aos-duration="3000">
         <figure class="fotoDePerfil">
             <img src="https://avatars.githubusercontent.com/u/103283363?v=4" alt="Foto de Perfil" />
         </figure>
@@ -101,20 +99,20 @@
 
             <div class="sobreMim-buttons">
                 <a href="docs/CurriculoViniciusRibeiro.pdf" download="CurriculoViniciusRibeiro.pdf"
-                    type="application/pdf" target="_blank" class="curriculo hover-effect02">
+                    type="application/pdf" target="_blank" class="border-purple hover-effect02">
                     <img src="icons/download-cloud.svg" alt="Download" id="curriculo" />
                     Currículo
                 </a>
-                <a href="mailto:viniciusgoes159@gmail.com" target="_blank" class="email hover-effect01">
+                <a href="mailto:viniciusgoes159@gmail.com" target="_blank" class="border-blue hover-effect01">
                     <img src="icons/email.svg" alt="E-mail" id="email" />
                     E-mail
                 </a>
             </div>
         </div>
-
     </div>
 
-    <div class="experiencia" id="experiencia">
+    <div class="experiencia" id="experiencia" data-aos="fade-up" data-aos-duration="3000">
+
         <h2>EXPERIÊNCIA</h2>
         <div class="divisao">
             <ul class="xp">
@@ -141,12 +139,12 @@
         </div>
     </div>
 
-    <div class="projetos" id="projetos">
+    <div class="projetos" id="projetos" data-aos="fade-up" data-aos-duration="3000">
         <h2>PROJETOS</h2>
 
         <div class="projetos-listagem">
 
-            <div>
+            <div class="projeto-container">
                 <figure>
                     <img src="images/projeto01.png" alt="imagem previa do projeto" />
                 </figure>
@@ -156,13 +154,27 @@
                     pedidos. No carrinho, é possivel usar sua localização atual como endereço para finalizar o pedido.
                 </p>
                 <p class="tecnologias">React, React Router, Redux & TailwindCSS</p>
-                <a href="https://fastreactpizza-app.netlify.app/" class="hover-effect01" target="_blank">
-                    <img src="icons/link.svg" alt="link" class="linkimg" />
-                    Visualizar
-                </a>
+
+                <div class="projeto-botoes">
+
+                    <a href="https://fastreactpizza-app.netlify.app/" class="border-blue hover-effect01"
+                        target="_blank">
+                        <img src="icons/link.svg" alt="link" class="linkimg" />
+                        Visualizar
+                    </a>
+
+                    <a href="https://github.com/Viniciusrbr/Fast-React-Pizza-Co." class="border-purple hover-effect02"
+                        target="_blank">
+                        <img src="icons/github.svg" alt="link" class="linkimg" />
+                        Código-fonte
+                    </a>
+
+                </div>
+
+
             </div>
 
-            <div>
+            <div class="projeto-container">
                 <figure>
                     <img src="images/projeto02.png" alt="imagem previa do projeto" />
                 </figure>
@@ -172,58 +184,34 @@
                     que exibe as informações mais importantes dos últimos 7, 30 ou 90 dias.
                 </p>
                 <p class="tecnologias">React, React Router, Styled Components, React Query, React Hook Form</p>
-                <a href="https://github.com/Viniciusrbr/The-Wild-Oasis" class="hover-effect01" target="_blank">
-                    <img src="icons/link.svg" alt="link" class="linkimg" />
-                    Visualizar
-                </a>
+
+                <div class="projeto-botoes">
+
+                    <a href="https://the-wild-oasis-viniciusrbr.netlify.app/login" class="border-blue hover-effect01"
+                        target="_blank">
+                        <img src="icons/link.svg" alt="link" class="linkimg" />
+                        Visualizar
+                    </a>
+
+                    <a href="https://github.com/Viniciusrbr/The-Wild-Oasis" class="border-purple hover-effect02"
+                        target="_blank">
+                        <img src="icons/github.svg" alt="link" class="linkimg" />
+                        Código-fonte
+                    </a>
+                </div>
             </div>
 
-            <!-- 
-            
-            <div>
-                <figure>
-                    <img src="images/530x200.jpg" alt="" />
-                </figure>
-                <h3>Nome do projeto</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                    varius.
-                </p>
-                <p class="tecnologias">Tecnologias usadas no projeto</p>
-                <a href="#" class="hover-effect01" target="_blank">
-                    <img src="icons/link.svg" alt="link" class="linkimg" />
-                    Visualizar
-                </a>
-            </div>
-
-            <div>
-                <figure>
-                    <img src="images/530x200.jpg" alt="" />
-                </figure>
-                <h3>Nome do projeto</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu
-                    varius.
-                </p>
-                <p class="tecnologias">Tecnologias usadas no projeto</p>
-                <a href="#" class="hover-effect01" target="_blank">
-                    <img src="icons/link.svg" alt="link" class="linkimg" />
-                    Visualizar
-                </a>
-            </div>
-
--->
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2023 - Vinicius Ribeiro</p>
+        <p>&copy; 2024 - Vinicius Ribeiro</p>
     </footer>
 
 
     <!-- JS da Lib de animação-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>

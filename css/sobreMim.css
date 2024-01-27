@@ -58,15 +58,6 @@
 	color: white;
 	font-weight: 600;
 	font-size: 1rem;
-	border: 2px solid transparent;
-}
-
-.sobreMim-buttons .curriculo {
-	border-image: linear-gradient(90deg, #d24074, #6518b4 100%) 1;
-}
-
-.sobreMim-buttons .email {
-	border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
 }
 
 @media(max-width: 1226px) {
