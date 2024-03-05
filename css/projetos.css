@@ -120,4 +120,10 @@
     .projeto-container {
         width: 48%;
     }
+
+    .projeto-container figure {
+        max-height: 25.5rem;
+        min-height: 25.5rem;
+    }
+
 }
